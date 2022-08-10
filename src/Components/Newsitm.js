@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 
 
 
-export class Newsitm extends Component {
-  render() {
-    let {title,description,imageUrl, newsUrl,published,author}=this.props
+const Newsitm=(props)=> {
+  let {title,description,imageUrl, newsUrl,published,author}=props
     return (
-      <div>
+        <div>
         <div className="card" >
   <img src={!imageUrl?"https://nypost.com/wp-content/uploads/sites/2/2022/08/Paul_Newberry_College_Chaos_Football_Football.jpg?quality=75&strip=all&w=1024" :imageUrl} className="card-img-top" alt="..."/>
   <div className="card-body">
@@ -20,7 +19,7 @@ export class Newsitm extends Component {
 </div>
       </div>
     )
-  }
+  
 }
 
 export default Newsitm
