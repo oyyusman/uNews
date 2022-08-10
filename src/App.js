@@ -11,6 +11,7 @@ import {
   Routes,
   
 } from "react-router-dom";
+import LoadingBar from 'react-top-loading-bar'
 // snippets rcc
 export default class App extends Component {
   pageSize=10;
@@ -21,7 +22,11 @@ export default class App extends Component {
   <Router>
 
   <Navbar/>
-  
+  <LoadingBar
+        color='#f11946'
+        progress={10}
+       
+      />
 
  <div className="container">
 <Routes>
